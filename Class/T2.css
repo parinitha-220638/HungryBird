@@ -1,0 +1,31 @@
+.tabf{
+    border-collapse:collapse;
+    margin:30px auto;
+    width:55%;
+    text-align: center;
+}
+.tabr{
+    background-color:#d35400;
+}
+.st{
+    background-image: url("paneer.jpg");
+    background-size: cover;
+}
+.st::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:RGBA(0,0,0,0.4);
+}
+.mc{
+    background-image: url("vb.jpeg");
+    background-size: cover;
+}
+.ds{
+    background-image: url("gj.jpg");
+    background-size: cover;
+
+}

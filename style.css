@@ -123,8 +123,6 @@ align-items: center;
   flex: 1;
   height: 1px;
   background: #ddd;
-  margin: 0 12px;
-
 }
 .item-desc{
  font-size: 14px;
@@ -140,7 +138,79 @@ gap:20px;
 justify-content:center;
 }
 .images img {
-  width: 23%;             /* 4 images fit in one row */
+  width: 23%;             
   height: 300px;
-  border-radius: 10px;    /* optional */
+  border-radius: 10px;    
+}
+
+.bookseat {
+  height:100vh;
+  width:90vh;
+  background:url("fr.jpg") center/cover no-repeat;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50px;
+}
+.bookseat::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0, 0, 0, 0.6);
+  border-radius:50px;
+}
+.res_content{
+  position:relative;
+  color:#fff;
+  text-align:center;
+  max-width:900px;
+  padding:40px;
+  font-family:cursive;
+}
+.bookseat h1 {
+  font-size:36px;
+  font-weight:500;
+  margin-bottom:10px;
+}
+.bookseat p {
+  font-size:15px;
+  opacity:0.80;
+  margin-bottom:40px;
+}
+.frm {
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+.row {
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:20px;  
+}
+.frm input,.frm select,.frm textarea {
+  background:transparent;
+  border:none;
+  border-bottom:1px solid rgba(255, 255, 255, 0.6);
+  padding:10px 5px;
+  color:#fff;
+  font-size:14px;
+  outline:none;
+}
+.frm textarea {
+  resize:none;
+  height:80px;
+}
+.frm button {
+  margin-top:20px;
+  align-self:center;
+  background:#d4a373;
+  border:none;
+  padding:12px 30px;
+  font-size:13px;
+  letter-spacing:1px;
+  cursor:pointer;
+}
+.frm button:hover {
+  background:#c4925f;
 }
