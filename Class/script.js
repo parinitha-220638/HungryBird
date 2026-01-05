@@ -36,3 +36,15 @@
 // else{
 //     console.log("You are not eligible to vote")
 // }
+
+// let student={
+//     name:"Alex",
+//     id:123,
+//     course:"cse"
+
+// }
+// console.log(typeof student);
+
+// let x;
+// console.log(typeof x);
+

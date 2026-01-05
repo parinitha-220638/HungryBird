@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    
   </head>
   <body>
     <header class="main">
@@ -32,6 +32,7 @@
       </nav>
       
       <div class="mid">
+          <p id="customer_name">hello</p>
           <p class="subtitle" >INDIAN CUISINE</p>
           <p style="font-size:50px;"> MADE WITH CARE , SHARED WITH LOVE !!</p>
       </div>
@@ -461,31 +462,39 @@
   
   <form class="frm">
     <div class="row">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <input type="phone" placeholder="Your Phone" required>
+      <input type="text" placeholder="Your Name"  id="name" required>
+      <input type="email" placeholder="Your Email" id="mail" required>
+      <input type="phone" placeholder="Your Phone" id="phone" required>
     </div>
     <div class="row">
       <input type="date" required>
       <input type="time" required>
-      <input type="number" placeholder="No.of People" required>
+      <input type="number" placeholder="No.of People"  id="number"required>
     </div>
     <div class="row">
       <textarea>Special Request:</textarea>
     </div>
-    <button type="submit"class="btn">Book now</button>
+    <button type="submit" class="btn">Book now</button>
   </form>
   </div>
 </section>
 <section>
+  <section>
+    <h4 id="order"></h4>
+    <p id="order_details"></p>
+  </seciton>
 <form class="feedback">
   <h2>Feedback</h2>
   <p>Provide your experience with us.It will help us to improve our service.</p>
-  <input type="text" placeholder="Your Name">
-  <input type="email" placeholder="your email">
+  <input type="text" placeholder="Your Name" >
+  <input type="email" placeholder="your email"><br><br>
+  <label for="rating">Feedback:</label><br>
+  <textarea></textarea><br><br>
+  <button type="submit" class="btn" onclick="thank()">Submit</button>
   
 
 </form>
 </section>
+<script src="script.js"></script>
 </body>
 </html>
